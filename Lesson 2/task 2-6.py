@@ -13,7 +13,7 @@ while True:
     i += 1
 print("Структура (товары):\n",my_tuples)
 my_dict = {}
-names, prices, nums, units = [], [], [], []
+names, prices, nums = [], [], []
 units = set()
 for one_tuple in my_tuples:
     names.append(one_tuple[1][keys[0]])
