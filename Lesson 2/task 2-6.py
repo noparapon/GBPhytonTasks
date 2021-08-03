@@ -15,10 +15,10 @@ print("Структура (товары):\n",my_tuples)
 my_dict = {}
 names, prices, nums = [], [], []
 units = set()
-for one_tuple in my_tuples:
-    names.append(one_tuple[1][keys[0]])
-    prices.append(one_tuple[1][keys[1]])
-    nums.append(one_tuple[1][keys[2]])
-    units.add(one_tuple[1][keys[3]])
+for _, one_dict in my_tuples:
+    names.append(one_dict[keys[0]])
+    prices.append(one_dict[keys[1]])
+    nums.append(one_dict[keys[2]])
+    units.add(one_dict[keys[3]])
 my_dict.update({keys[0]: names, keys[1]: prices, keys[2]: nums, keys[3]: list(units)})
 print(my_dict)
